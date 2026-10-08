@@ -1,0 +1,475 @@
+/* Paleta de colores */
+:root {
+  --azul_marino_oscuro: #16213e;
+  --rosa_rojiso: #e94560;
+  --azul_medio: #0f3460;
+  --azul_casi_negro: #1a1a2e;
+  --blanco: #ffffff;
+  --gris_casi_negro: #222222;
+  --rosa_claro: #fde8ec;
+  --amarillo_claro: #ffe08a;
+  --verde_claro: #7CFC00;
+  --gris1: #fafafa;
+  --gris2: #f1f1f1;
+  --gris3: #f7f7f7;
+  --gris4: #cccccc;
+}
+
+/* Formateo base y auxiliares */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: var(--azul_casi_negro);
+}
+
+.ancho {
+  width: 1200px;
+  margin: auto;
+}
+
+.italic {
+  font-style: italic ;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.rosa_rojiso {
+  color: var(--rosa_rojiso);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.left {
+  text-align: left;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+
+/* CSS de selectores */
+
+.contenedor_principal {
+  background-color: var(--blanco);
+  margin-top: 30px;
+  border: 4px var(--rosa_rojiso) solid; /*Existe el dashed ---- sotted .... none double dobre*/
+}
+
+.contenedor_titulo {
+  width: 97%;
+  background-color: var(--azul_marino_oscuro);
+  margin-top: 20px;
+  padding: 40px 40px 20px 40px;
+}
+
+.contenedor_titulo h1 {
+  font-size: 38px;
+  margin-top: 10px;
+}
+
+.contenedor_titulo p {
+  color: var(--blanco);
+  font-style: italic;
+  margin-top: 15px;
+
+
+}
+
+.sep_uno {
+  width: 97%;
+  background-color: var(--rosa_rojiso);
+  height: 6px;
+  margin: auto;
+}
+
+.contenedor_marquee {
+
+  width: 97%;
+  margin: auto;
+  margin-top: 15px;
+  background-color: var(--rosa_rojiso);
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+
+}
+
+.contenedor_marquee marquee {
+
+  color: var(--blanco);
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+.contenedor_menu {
+  background-color: var(--azul_medio);
+  width: 97%;
+  height: 45px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.contenedor_menu a {
+  color: var(--blanco);
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.contenedor_menu a:hover {
+  color: var(--rosa_rojiso);
+  font-weight: bold;
+}
+
+.contenedor_nosotros {
+  background-color: var(--blanco);
+  width: 97%;
+}
+
+.subtitulo {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+.subtitulo h2 {
+  padding-left: 12px;
+  border-left: 8px var(--rosa_rojiso) solid;
+  margin-left: 2px;
+  line-height: 1;
+  font-size: 30px;
+}
+
+.formato_p {
+  text-align: justify;
+
+}
+
+.lema .formato_p {
+  border-left: 5px var(--rosa_rojiso) solid;
+  padding-left: 12px;
+  background-color: var(--gris3);
+  padding: 15px;
+
+}
+
+.horario {
+  width: 99%;
+  background-color: var(--azul_marino_oscuro);
+
+}
+
+.horario pre {
+  color: var(--verde_claro);
+  padding: 20px 0px;
+  font-family: Verdana;
+
+
+}
+
+.generos li {
+  margin-left: 40px;
+  font-size: 18px;
+  padding: 5px;
+}
+.generos .gen li {
+  margin-left: 80px;
+  font-size: 18px;
+}
+
+.fh3 {
+  color: var(--azul_medio);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.top3 li {
+  margin-left: 50px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.glosario pre {
+  font-family: Verdana;
+  font-size: 18px;
+}
+
+.sep {
+  height: 1.5px;
+  background-color: var(--azul_casi_negro);
+  border: none;
+}
+
+.p_redes {
+  color: var(--azul_medio);
+  display: inline;
+}
+
+.enlaces {
+  color: var(--rosa_rojiso);
+}
+
+.linea {
+  display: inline;
+}
+
+.redess a:hover {
+  color: var(--azul_medio);
+}
+
+.subtp h2 {
+  padding-left: 12px;
+  border-left: 8px var(--rosa_rojiso) solid;
+  margin-left: 20px;
+  line-height: 1;
+  font-size: 30px;
+}
+
+table {
+  border: 2px var(--gris4);
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+
+}
+
+th {
+  /* border: 2px green solid; */
+  padding: 12px 15px;
+  background-color: var(--azul_marino_oscuro);
+  color: var(--blanco);
+  font-weight: bold;
+
+}
+
+td {
+  border: 2px var(--gris4) solid;
+  padding: 10px 15px;
+  white-space: nowrap;
+  background-color: rgba(255, 255, 255, 0.696);
+  color: var(--gris_casi_negro);
+}
+
+.tabla {
+  width: 97%;
+  /* border: 2px blue dashed; */
+  margin: auto;
+}
+
+.fondo2 {
+  background-color: #fde8ec;
+}
+
+.foot {
+  background-color: var(--azul_medio);
+  color: var(--blanco);
+}
+
+caption {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+
+}
+
+.formularios {
+  width: 97%;
+  margin: auto;
+}
+
+fieldset {
+  border: 2px solid var(--rosa_rojiso);
+  background-color: var(--gris2);
+  padding: 25px 30px;
+}
+
+legend {
+  color: var(--rosa_rojiso);
+  font-weight: bold;
+  font-size: 22px;
+  padding: 0 10px;
+}
+
+/* Agrupador de cada fila del formulario */
+.campo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+/* Fijamos un ancho constante a las etiquetas para que todas las cajas se alienen perfectamente */
+.campo > label {
+  width: 220px;
+  font-size: 18px;
+  color: var(--gris_casi_negro);
+  margin-left: 0; /* Limpia el margen anterior */
+}
+
+/* Estilo unificado para los campos de entrada */
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="password"],
+.campo input[type="number"],
+.campo input[type="time"],
+.campo input[type="date"],
+
+.campo select {
+  width: 350px;
+  height: 38px;
+  padding: 6px 12px;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  border: 1px solid #a6a6a6;
+  border-radius: 2px;
+  background-color: var(--blanco);
+  margin-left: 0; /* Se elimina el margen manual previo */
+}
+
+/* Estilo específico para la fila de radio buttons */
+.opciones_radio {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.opciones_radio label {
+  width: auto;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.opciones_radio input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Agrupador horizontal de casillas */
+.opciones_checkbox {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+/* Para que la etiqueta individual de cada casilla no tome los 220px del label principal */
+.opciones_checkbox label {
+  width: auto;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Ajuste de tamaño para las casillas */
+.opciones_checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin: 0;
+}
+
+textarea {
+  width: 350px;
+  height: 90px;
+  resize: none;
+
+}
+
+
+/* Agrupador de los botones */
+.botones {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  margin-left: 220px; /* Muestra los botones alineados con los inputs */
+}
+
+/* Estilo base para los botones */
+.btn {
+  padding: 10px 25px;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Botón Enviar */
+.btn_enviar {
+  background-color: var(--rosa_rojiso);
+  color: var(--blanco);
+}
+
+.btn_enviar:hover {
+  background-color: var(--azul_medio);
+}
+
+/* Botón Restablecer */
+.btn_reset {
+  background-color: var(--gris4);
+  color: var(--gris_casi_negro);
+}
+
+.btn_reset:hover {
+  background-color: #b3b3b3;
+}
+
+.contenedor_logo img {
+  width: 300px;
+}
+
+.contenedor_iframe iframe {
+  width: 50%;
+  height: 500px;
+}
+
+.contenedor_iframe img {
+  width: 300px;
+}
+
+.mar {
+  margin-left: 20px;
+}
+
+.contacto_final a {
+  text-decoration: none;
+  color: var(--rosa_rojiso);
+  font-weight: bold;
+}
+
+.pie {
+  background-color: var(--azul_marino_oscuro);
+  width: 97%;
+  height: 100px;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.pie p {
+  color: var(--blanco);
+  font-size: 20px;
+  
+  
+
+}
